@@ -5,7 +5,7 @@ function Plan(name, price, space, transfer, pages, discountMonths) { // creates 
   this.transfer = transfer;
   this.pages = pages;
   this.discountMonths = discountMonths;
-  this.calcAnnual = function(percentIfDisc) {
+  this.calcAnnual = function(percentIfDisc) { // the beginning of the method definition
     var bestPrice = this.price;
     var currDate = new Date();
     var theMo = currDate.getMonth();
