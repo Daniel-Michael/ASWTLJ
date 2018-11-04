@@ -41,4 +41,8 @@ $("input#someInput").val($("input#otherInput").val());
 // or read the text in a paragraph and store it in a variable
 var theNewText = $("p#introText").text();
 
+// fade in or out, elements with an id.... 
+$("p#rules").fadeOut("fast");
+
+
 
