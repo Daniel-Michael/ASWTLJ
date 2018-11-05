@@ -53,6 +53,12 @@ $("h2#bigger").on("click dblclick", function() {
 $("button#baldy").on("click", function() {
   $("div").addClass("hairy");
 });
+
+// slide an element (by class) into view
+$("div.spoon").slideDown();
+
+// slide an element out of view
+$("div.spoon").slideUp();
                   
 
 
