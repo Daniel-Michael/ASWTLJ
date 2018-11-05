@@ -16,17 +16,14 @@ $("p").removeClass("someClass");
 $("p.important").addClass("someClass");
 
 // or just the elements of that class
-
 $(".important").addClass("someClass");
 
 // insert text or HTML method
-
 $("#nav2").text("This is plain text");
 
 $("#nav2").html("<p>This html</p>");
 
 // Read user entry of ID #nameInput and save to a variable
-
 var userNameInput = $("input#nameInput").val();
 
 // insert a value into a form field by ID
