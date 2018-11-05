@@ -60,5 +60,8 @@ $("div.spoon").slideDown();
 // slide an element out of view
 $("div.spoon").slideUp();
                   
-
+//  slide all images of a particular class into view when the user clicks a p element class
+$("p#bigger").on("click", function() {
+  $("img.smaller").slideDown();
+});
 
