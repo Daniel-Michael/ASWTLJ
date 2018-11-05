@@ -70,4 +70,7 @@ $("img#doggo").hide("fast");
 $("img#doggo").show("slow");
 $("img#doggo").toggle("2000");
 
-
+// toggle, hide or show within a function
+$("input#boner").on("focus", function() {
+  $("p#bug").show();
+});
