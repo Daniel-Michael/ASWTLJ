@@ -65,3 +65,9 @@ $("p#bigger").on("click", function() {
   $("img.smaller").slideDown();
 });
 
+// hide, show or toggle elements with speed optional 
+$("img#doggo").hide("fast");
+$("img#doggo").show("slow");
+$("img#doggo").toggle("2000");
+
+
