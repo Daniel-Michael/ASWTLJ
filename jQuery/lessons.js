@@ -44,5 +44,14 @@ var theNewText = $("p#introText").text();
 // fade in or out, elements with an id.... 
 $("p#rules").fadeOut("fast");
 
+// listen for a click or double click by element
+$("h2#bigger").on("click dblclick"...
+                  
+// take action on click
+$("h2#bigger").on("click dblclick", function() {
+  $("img").hide();
+});
+
+                  
 
 
