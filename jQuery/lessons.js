@@ -49,6 +49,10 @@ $("h2#bigger").on("click dblclick", function() {
   $("img").hide();
 });
 
+// add a class to all divs when a button is clicked
+$("button#baldy").on("click", function() {
+  $("div").addClass("hairy");
+});
                   
 
 
