@@ -74,3 +74,9 @@ $("img#doggo").toggle("2000");
 $("input#boner").on("focus", function() {
   $("p#bug").show();
 });
+
+//change multipe CSS styles inline
+$("p#thong").css({
+  "font-size": "2.5em",
+  "color": "red"
+});
