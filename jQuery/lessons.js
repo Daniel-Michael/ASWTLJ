@@ -80,3 +80,8 @@ $("p#thong").css({
   "font-size": "2.5em",
   "color": "red"
 });
+
+// when a user clicks a paragraph, the font size increases, using `this` keyword
+$("p").on("click", function() {
+  $(this).css("font-size", "2.5em");
+});
