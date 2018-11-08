@@ -85,3 +85,8 @@ $("p#thong").css({
 $("p").on("click", function() {
   $(this).css("font-size", "2.5em");
 });
+
+// when a use mouses over, or clicks, an element, it applies a new class
+$("img").on("click", function() {
+  $(this).attr("class", "invisible");
+});
