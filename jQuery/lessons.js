@@ -97,6 +97,14 @@ $("img").on("click", function() {
 });
 
 //toggleClass on button click
-$("button#b1").on("click", function(){
+$("button#b1").on("click", function() {
   $("h4, .changeable").toggleClass("big bright");
+});
+
+// use toggleClass to remove or add a class on mouseover
+$("p#moose").on("mouseover", function() {
+  $(this).toggleClass("bing");
+});
+$("p#moose").on("mouseout", function() {
+  $(this).toggleClass("bing");
 });
