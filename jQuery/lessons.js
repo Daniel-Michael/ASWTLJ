@@ -90,3 +90,8 @@ $("p").on("click", function() {
 $("img").on("click", function() {
   $(this).attr("class", "invisible");
 });
+
+// remove an image and html tags using `remove` or remove content inside tags only with `empty`
+$("img").on("click", function() {
+  $("img").remove();
+});
