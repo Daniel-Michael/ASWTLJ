@@ -95,3 +95,8 @@ $("img").on("click", function() {
 $("img").on("click", function() {
   $("img").remove();
 });
+
+//toggleClass on button click
+$("button#b1").on("click", function(){
+  $("h4, .changeable").toggleClass("big bright");
+});
