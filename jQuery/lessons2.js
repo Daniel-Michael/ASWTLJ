@@ -59,3 +59,8 @@ $("p#moose").on("mouseout", function() {
 $("p#p1, p#p2, p#p3").on("click", function() {
   $(this).replaceWith("<p>Some new par</p>");
 });
+
+// when a user clicks a particular button, text is changed using html
+$("button#b1").on("click", function() {
+  $("p:contains('cute')").html("<p>It bites.</p>")
+});
