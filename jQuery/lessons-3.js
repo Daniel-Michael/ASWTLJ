@@ -12,3 +12,9 @@ pic.slideDown();
 var pic = $("img#loris");
 var speed = 3000;
 pic.slideUp(speed);
+
+// a user clicks a button and a var is used to add a class to the element
+$("button#b1").on("click", function() {
+  var graphs = $("p:contains('loris')");
+  graphs.addClass("special");
+});
