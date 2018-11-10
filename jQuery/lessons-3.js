@@ -18,3 +18,10 @@ $("button#b1").on("click", function() {
   var graphs = $("p:contains('loris')");
   graphs.addClass("special");
 });
+
+// a user clicks a button and an element is hidden using declared variables
+var myBig = $("p#p3");
+var mySpeed = 3000;
+$("button#b1").on("click", function() {
+  myBig.hide(mySpeed);
+});
