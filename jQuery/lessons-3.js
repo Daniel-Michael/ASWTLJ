@@ -35,3 +35,9 @@ $("form#contact").on("submit", function() {
 $("p#urge").on("mouseover", function() {
   $(this).text($(this).text() + "now");
 });
+
+// user enters her first name in a field which is then added to the element's ID
+$("button#b1").on("click", function() {
+  var first_name = $("input#t1").val();
+  $("p#p1").text(first_name);
+});
