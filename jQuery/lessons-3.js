@@ -41,3 +41,6 @@ $("button#b1").on("click", function() {
   var first_name = $("input#t1").val();
   $("p#p1").text(first_name);
 });
+
+// enter data from one input entry into another
+$("input#entry_2").val($("input#entry_1").val());
