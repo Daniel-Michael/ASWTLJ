@@ -30,3 +30,8 @@ $("button#b1").on("click", function() {
 $("form#contact").on("submit", function() {
   var first = $("input#name_first").val();
 });
+
+// When the user mouses over a certain paragraph, the word "now" is inserted back into the paragraph with the text
+$("p#urge").on("mouseover", function() {
+  $(this).text($(this).text() + "now");
+});
