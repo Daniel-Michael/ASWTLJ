@@ -25,3 +25,8 @@ var mySpeed = 3000;
 $("button#b1").on("click", function() {
   myBig.hide(mySpeed);
 });
+
+// a user enters data into a form, and that data is saved to a variable
+$("form#contact").on("submit", function() {
+  var first = $("input#name_first").val();
+});
