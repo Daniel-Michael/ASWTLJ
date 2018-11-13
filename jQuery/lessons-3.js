@@ -44,3 +44,11 @@ $("button#b1").on("click", function() {
 
 // enter data from one input entry into another
 $("input#entry_2").val($("input#entry_1").val());
+
+// fill an empty html element with personalised text
+<h4 id="personalisedQuote"></h4>
+$("form#userName").on("submit", function() {
+  var first_name = $("input#firstName").val();
+  var last_name = $("input#secondName").val();
+  $("h4#personalisedQuote").text("Personal Quote of the day for " + first_name + " " + last_name);
+});
