@@ -1,3 +1,7 @@
+body {
+  font-size: 1em;
+}
+
 p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.2em;
@@ -47,13 +51,19 @@ p.justified {
   text-align: right;
 }
 
+div#date{
+  font-size: .8em;
+  margin: 0 10em 0 10em;
+}
+
 p.indent {
   text-indent: .5em;
 }
 
 blockquote {
-  font-size: .9em;
+  font-size: 1.9em;
   color: grey;
+  font-style: italic;
 }
 
 p.offset {
@@ -61,7 +71,35 @@ p.offset {
 }
 
 .enclosed {
-  border: 4px ridge #ff4400;
+  border: 4px ridge #250657;
   padding: .1em .2em 0 .3em;
 }
 
+h2#orange {
+  color: orange;
+}
+
+img.owns-itself {
+  display: block;
+  margin-bottom: .5em;
+}
+
+img.inset {
+  display: block;
+  margin-left: 8em;
+  margin-bottom: .5em;
+}
+
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+p.no-wrap {
+  clear: both;
+}
+img.float-right {
+  float: right;
+  margin: 0 .75em .5em 0;
+}
