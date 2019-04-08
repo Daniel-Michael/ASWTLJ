@@ -1,21 +1,73 @@
+/* body styling */
+
 body {
   font-size: 1em;
 }
+
+/* paragraph styling */
 
 p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.2em;
 }
 
+p.important {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+p.more-readable {
+  letter-spacing: 0;
+  word-spacing: 1em;
+  line-height: 1.5em;
+}
+
+p.justified {
+  text-align: justify;
+}
+
+p.indent {
+  text-indent: .5em;
+}
+
+p.offset {
+  margin: 1.5em;
+}
+
+p.no-wrap {
+  clear: both;
+}
+/* Heading tag styles */
 h1 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 2em;
   text-align: center 
 }
 
-p.important {
-  font-size: 1.5em;
-  font-weight: 900;
+h2#orange {
+  color: orange;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* Link styles */
+a {
+  color: blue;
+}
+
+a:hover {
+ color: orange;
+}
+
+a:visited {
+  color: purple;
+}
+/* specific classes style */
+.date-adjust {
+  text-align: right;
 }
 
 .typewriter {
@@ -34,30 +86,13 @@ p.important {
   color: dodgerblue;
 }
 
-p.more-readable {
-  letter-spacing: 0;
-  word-spacing: 1em;
-  line-height: 1.5em;
-}
-
-h3 {
-  text-align: center;
-}
-
-p.justified {
-  text-align: justify;
-}
-.date-adjust {
-  text-align: right;
-}
-
 div#date{
   font-size: .8em;
   margin: 0 10em 0 10em;
 }
 
-p.indent {
-  text-indent: .5em;
+div#date > p {
+  font-size: 2em;
 }
 
 blockquote {
@@ -66,18 +101,12 @@ blockquote {
   font-style: italic;
 }
 
-p.offset {
-  margin: 1.5em;
-}
-
 .enclosed {
   border: 4px ridge #250657;
   padding: .1em .2em 0 .3em;
 }
 
-h2#orange {
-  color: orange;
-}
+/* image styles */
 
 img.owns-itself {
   display: block;
@@ -96,10 +125,23 @@ img.centered {
   margin-right: auto; 
 }
 
-p.no-wrap {
-  clear: both;
-}
-img.float-right {
-  float: right;
+img.float-left {
+  float: left;
   margin: 0 .75em .5em 0;
+}
+
+/* List styles */
+
+ul {
+  margin: 0 1.5em 0 1.5em;
+}
+
+ol.motorcycles {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2em;
+  margin: 0 1.5em 0 1.5em;
+}
+
+li {
+  margin: .75em;
 }

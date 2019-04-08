@@ -4,7 +4,7 @@
     <link rel="stylesheet" type ="text/css" href="css/styles.css">
   </head>
   <body>
-    <h1>Why I love motorcycles</h1>
+    <h1 id="top">Why I love motorcycles</h1>
    
     <div id="date"><p class="date-adjust enclosed">Date: 06/04/2019</p></div>
     <h2>- "The rush never fades"</h2>
@@ -21,7 +21,7 @@
     <p>I guess you could call it something of an obsession.</p>
 
     <p>Some of the bikes I've had over the years include:</p>
-    <ol>
+    <ol class="motorcycles">
         <li>KTM 300</li>
         <li>Honda Grom MSX 125</li>
         <li>Suzuki DRZ 400e</li>
@@ -44,10 +44,41 @@
     <p class="more-readable">This text should have different spacing of all kinds. Including a different line height, word spacing and letter spacing.</p>
 
     <p class="offset">Something I enjoy is riding different styles of motorcycles, from racers to scramblers, adventure bikes to mini bikes, I like riding them all!</p>
-    <img class="owns-itself" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="a small loris clutching a mans forearm" width="250" height="197">
+    <img class="owns-itself float-left" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="a small loris clutching a mans forearm" width="250" height="197">
+    <p class="no-wrap">This image of small loris has the `clear-wrap` CSS assigned to it, so it doesn't array with the image alnogside it, instead it appears directly underneath. Neat huh?</p>
+
      <img class="owns-itself inset" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="a small loris clutching a mans forearm" width="125" height="99">
+     <p>This smaller image of a loris has the CSS class of `inset` assigned to it, so no matter what size the screen, it will always jump across from the far left border a certain amount, determined by the CSS.</p>
      <img class="owns-itself centered" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="a small loris clutching a mans forearm" width="250" height="197">
-     <img class="float-right" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="a small loris clutching a mans forearm" width="125" height="99">
-     <p class="no-wrap">This image of small loris is something I never created.</p>
+     <p>This loris image has the CSS `centered` assigned to it so it appears, naturally, in the middle of the page.</p>
+     <img class="float-left" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="a small loris clutching a mans forearm" width="125" height="99">
+     
+     <p>This smaller loris has the CSS `float-left` assigned to it so the text straight after it in the HTML will wrap around the image. It's a good example of content stucture using HTML and setting styles using CSS.</p> 
+     
+     <p>In this section I am learning about using the float properties and how to clear them.</p>
+     <p class="no-wrap important">And let's be honest, a loris is a pretty damn cute little bugger! </p>
+
+     <p>The book that I have been learning about HTML & CSS from is by a clever guy called Mark Myers and his book is called <a href="http://www.asmarterwaytolearn.com" target="_blank">A Smarter Way to Learn HTML & CSS</a>. <p id="openWindow">Click here to open a new small window.</p>
+
+     <a id="openWindow" href="http://www.asmarterwaytolearn.com" target="_blank"><img class="no-wrap" src="http://www.asmarterwaytolearn.com/robo_guy.png" target="_blank"></a>
+     <br>
+     <img class="float-left" src="https://asmarterwaytolearn.com/stooges.jpg" alt="The Three Stooges" usemap="#stooges">
+     <p>This image of the Three Stooges has an image map, which means you can hover over certain areas and click them to go to further information!</p>
+    <p class="no-wrap"></p>
+     <map name="stooges">
+       <area shape="circle" alt="Moe" coords="56,56,47" href="https://en.wikipedia.org/wiki/Moe_Howard" target="_blank">
+       <area shape="circle" alt="Curly" coords="126,93,31" href="https://en.wikipedia.org/wiki/Curly_Howard" target="_blank">
+       <area shape="circle" alt="Larry" coords="208,66,39" href="https://en.wikipedia.org/wiki/Larry_Fine" target="_blank">
+     </map>
+     <br>
+     
+     <a href="#top">Take me back to the top.</a>
+     <script>
+      document.getElementById("openWindow").onclick = openWindow;
+      function  openWindow() {
+        var w = window.open("more-info.html", "",
+        "width=200, height=300,left=300,top=400");
+      }
+      </script>
   </body>
 </html>
