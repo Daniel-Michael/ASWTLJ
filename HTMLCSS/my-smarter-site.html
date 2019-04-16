@@ -4,23 +4,27 @@
     <title>HTML Practice</title>
     <link rel="stylesheet" type ="text/css" href="css/styles.css">
   </head>
+  
   <body>
+    <div id="main">
+      <div id="header">
     <h1 id="top">Why I love motorcycles</h1>
-   
+      </div>
     <div id="date"><p class="date-adjust enclosed">Date: 06/04/2019</p></div>
     <h2>- "The rush never fades"</h2>
     <h3>by Daniel Michael</h3>
-    
+    <div id="content">
     <p class="important">Warning: nothing but motorcycles ahead:</p>
 
     <p>I think it's fair to say I love riding motorcycles, it's that simple. I have done since I was about four years old when my Dad bought me a PeeWee 80, a small CC automatic clutch motorcycle to learn on.</p>
 
     <blockquote>To me, riding motorcycles has become something of a way of life, I prefer to ride over driving a car in any situation, and I like short rides to the shops as well as long haul rides across country, or overseas.</blockquote>
 
-    <p>I also like web design and development and have run a couple of different motorcycle focussed websites over the years, starting with <a href="https://www.ducatiblog.com.au" target="_blank">Ducati Blog</a>, then <a href="https://www.dailybikers.com" target="_blank">Daily Bikers</a> and most recently a more community focussed site where you can upload your own images and start a profile, talk with others etc. called <a href="https://www.motohoncho.com" target="_blank">Moto Honcho</a>.</p>
+    <div id="sidebar"><p>I also like web design and development and have run a couple of different motorcycle focussed websites over the years, starting with <a href="https://www.ducatiblog.com.au" target="_blank">Ducati Blog</a>, then <a href="https://www.dailybikers.com" target="_blank">Daily Bikers</a> and most recently a more community focussed site where you can upload your own images and start a profile, talk with others etc. called <a href="https://www.motohoncho.com" target="_blank">Moto Honcho</a>.</p>
 
-    <p>I guess you could call it something of an obsession.</p>
-
+    <p>I guess you could call it something of an obsession.</p></div>
+    <!-- <div class="no-wrap"></div> -->
+  
     <p>Some of the bikes I've had over the years include:</p>
     <ol class="motorcycles">
         <li>KTM 300</li>
@@ -32,7 +36,7 @@
         <li>BMW R1200GS</li>
   
     </ol>
-    
+  
     <h2 id="orange">KTM's are always orange</h2> 
     <h2 class="typewriter">Ducatis are always red</h2>
 
@@ -41,10 +45,14 @@
     <h2 class="emphasiss">I own a <span class="blue-highlight">BMW</span> and a <span class="red-highlight">Ducati</span>.</h2>
 
     <p class="indent">It doesn't really  matter <i>what</i> bike you ride, as long as you <b>ride</b> a bike, we can be <span class="emphasis">mates</span>.</p>
-
+  </div>
+  <div class="no-wrap"></div>
+  <div class="banner">
     <p class="more-readable">This text should have different spacing of all kinds. Including a different line height, word spacing and letter spacing.</p>
 
     <p class="offset">Something I enjoy is riding different styles of motorcycles, from racers to scramblers, adventure bikes to mini bikes, I like riding them all!</p>
+  </div>
+    
     <img class="owns-itself float-left" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="a small loris clutching a mans forearm" width="250" height="197">
     <p class="no-wrap">This image of small loris has the `clear-wrap` CSS assigned to it, so it doesn't array with the image alongside it, instead the text appears directly underneath.</p>
 
@@ -52,9 +60,10 @@
 
      <p>This smaller image of a loris has the CSS class of `inset` assigned to it, so no matter what size the screen, it will indent from the left border, as determined by the CSS.</p>
 
+    <div class="banner">
      <img class="owns-itself centered" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="a small loris clutching a mans forearm" width="250" height="197">
 
-     <p>This loris image has the CSS `centered` assigned to it so it appears, naturally, in the middle of the page.</p>
+     <p>This loris image has the CSS `centered` assigned to it so it appears, naturally, in the middle of the page.</p></div>
      <img class="float-left" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="a small loris clutching a mans forearm" width="125" height="99">
      
      <p>This smaller loris has the CSS `float-left` assigned to it so the text straight after it in the HTML will wrap around the image. It's a good example of content stucture using HTML and setting styles using CSS.</p> 
@@ -62,10 +71,12 @@
      <p>In this section I am learning about using the float properties and how to clear them.</p>
      <p class="no-wrap important">And let's be honest, a loris is a pretty damn cute little bugger! </p>
 
-     <p>The book that I have been learning about HTML & CSS from is by a clever guy called Mark Myers and his book is called <a href="http://www.asmarterwaytolearn.com" target="_blank">A Smarter Way to Learn HTML & CSS</a>. <p id="openWindow">Click here to open a new small window.</p>
+     <div id="stubby"></div><p>The book that I have been learning about HTML & CSS from is by a clever guy called Mark Myers and his book is called <a href="http://www.asmarterwaytolearn.com" target="_blank">A Smarter Way to Learn HTML & CSS</a>. <p id="openWindow">Click here to open a new small window.</p>
+     <div class="no-wrap"></div>
 
      <a href="http://www.asmarterwaytolearn.com" target="_blank"></a><img id="roboImg" class="no-wrap" src="http://www.asmarterwaytolearn.com/robo_guy.png" target="_blank"></a>
      <br>
+     <div class="banner">
      <img class="float-left" src="https://asmarterwaytolearn.com/stooges.jpg" alt="The Three Stooges" usemap="#stooges">
      <p>This image of the Three Stooges has an image map, which means you can hover over certain areas and click them to go to further information!</p>
     <p class="no-wrap"></p>
@@ -74,6 +85,7 @@
        <area shape="circle" alt="Curly" coords="126,93,31" href="https://en.wikipedia.org/wiki/Curly_Howard" target="_blank">
        <area shape="circle" alt="Larry" coords="208,66,39" href="https://en.wikipedia.org/wiki/Larry_Fine" target="_blank">
      </map>
+    </div>
      <br>
 
      <p>This is how you create a table in HTML & CSS</p>
@@ -108,6 +120,7 @@
       </tr>
      </table>
 
+     And this is how you create a form.
      <form>
        <fieldset>
          <legend>Contact Details</legend>
@@ -140,6 +153,9 @@
     </form>   
     <br>  
      <a href="#top">Take me back to the top.</a>
+    
+    </div>
+
      <script>
       document.getElementById("openWindow").onclick = openWindow;
       function  openWindow() {
