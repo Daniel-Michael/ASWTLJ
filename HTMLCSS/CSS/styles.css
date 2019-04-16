@@ -6,6 +6,10 @@ CSS styles for learning with Mark Meyers April 2019.
 
 body {
   font-size: 1em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+  background-color: white;
+  color: black;
 }
 
 /* paragraph styling */
@@ -90,26 +94,16 @@ a:visited {
   color: dodgerblue;
 }
 
-div#date{
-  font-size: .8em;
-  margin: 0 10em 0 10em;
-  
+.enclosed {
+  border: 4px ridge #250657;
+  padding: .1em .2em 0 .3em;
+  width: 30%;
 }
-
-/* div#date > p {
-  font-size: .8em;
-} */
 
 blockquote {
   font-size: 1.9em;
   color: grey;
   font-style: italic;
-}
-
-.enclosed {
-  border: 4px ridge #250657;
-  padding: .1em .2em 0 .3em;
-  width: 30%;
 }
 
 /* image styles */
@@ -151,6 +145,43 @@ ol.motorcycles {
 li {
   margin: .75em;
 }
+
+/* div styles */
+div#date{
+  font-size: .8em;
+  margin: 0 10em 0 10em;
+  
+}
+
+div#date > p {
+  font-size: 2em;
+}
+
+div#main {
+  color: red;
+  width: 90%;
+  margin: 1.5em auto 1% auto;
+}
+
+div#stubby {
+  width: 20%;
+  margin: auto;
+}
+
+div#content {
+  width: 68%;
+  float: left;
+}
+
+div#sidebar {
+  width: 29%;
+  float: right;
+}
+
+/* div#date > p {
+  font-size: .8em;
+} */
+
 
 /* Table styles */
 
