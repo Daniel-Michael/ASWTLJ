@@ -67,6 +67,7 @@ h3 {
 }
 
 /* Link styles */
+
 a {
   color: blue;
 }
@@ -79,6 +80,7 @@ a:visited {
   color: purple;
 }
 /* specific classes style */
+
 .date-adjust {
   text-align: right;
 }
