@@ -46,6 +46,11 @@ p.offset {
 p.no-wrap {
   clear: both;
 }
+
+p.clearFloat {
+ clear: both;
+}
+
 /* Heading tag styles */
 h1 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -146,6 +151,18 @@ li {
   margin: .75em;
 }
 
+li.changeBackground {
+  background-color: #047753;
+}
+
+li.changeBackground:hover {
+  background-color: #772804;
+}
+
+li.changeBackground:active {
+  background-color: #770455;
+}
+
 /* div styles */
 div#date{
   font-size: .8em;
@@ -182,6 +199,33 @@ div#sidebar {
   background-color: #0ca172;
 }
 
+div#header {
+  width: 100%;
+  position: absolute;
+  top: 150;
+  left: 50;
+  background-color: #990000;
+}
+
+div#spacer {
+  width: 100%;
+  visibility: hidden;
+}
+
+div#header h2, div#spacer h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  color: white;
+  font-size: 2em;
+  margin-left: 2%;
+  padding: 0;
+}
+
+div#header img, div#spacer img {
+  float: left;
+  margin: .9em .6em 0 .75em;
+}
+
 div.banner {
   width: 95%;
   margin: auto;
@@ -189,10 +233,36 @@ div.banner {
   background-color: #4a714c;
 }
 
-div#header {
+div#navbar {
   width: 100%;
-  background-color: #4a9b4e
+  clear: both;
+  /* background-color: #047753; */
+  /* display: inline-block; */
 }
+div#navbar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+div#navbar ul li {
+  text-align: center;
+  display: inline;
+  width: 19%;
+  float: left;
+  margin-right: .5em;
+  /* padding: 0 1em .3em 1em; */
+}
+
+div #navbar ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: .75em;
+}
+
 .no-wrap {
   clear: both;
 }
